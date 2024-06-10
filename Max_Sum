@@ -1,0 +1,32 @@
+package dsa123;
+import java.io.*;
+//progrm for printing the max sub array sum..
+class Max_Sm{
+    public void subarray(int num[]){
+        int ts=0;
+        int sum=0;
+        int maxSum= Integer.MIN_VALUE;
+        for(int i =0;i<num.length;i++){
+            int start = num[i];
+        for(int j=i;j<num .length;j++){
+            int end = j;
+            for(int k = start;k<=end;k++){
+            	sum+= num[k];
+            	//System.out.println(sum); 
+            }
+            if(maxSum<=sum) {
+            	maxSum= sum;
+            	
+            }
+        }
+       
+    }
+    
+        System.out.println(sum); 
+}
+	public static void main (String[] args) {
+	int num []= {1,2,3,4,5,6};
+	Sub s = new Sub();
+	s.subarray(num);
+	} 
+}
